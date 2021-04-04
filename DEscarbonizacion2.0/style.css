@@ -1,0 +1,12 @@
+.navbar-brand{
+    padding-left: 10px;
+}
+
+a{
+    color: white;
+}
+
+.carousel_slide{
+    margin-top: 5%;
+    height: 60%;
+}
