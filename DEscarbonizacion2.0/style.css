@@ -10,3 +10,9 @@ a{
     margin-top: 5%;
     height: 60%;
 }
+
+.card-text-mb-auto {
+    line-height: 18px;
+    height: 54px;
+    overflow: hidden;
+}
