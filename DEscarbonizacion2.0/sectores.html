@@ -16,6 +16,8 @@
     <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.0/js/bootstrap.min.js"></script>
     <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
 
+    <script src="animations.js"></script>
+
 </head>
 
 <body>
@@ -83,33 +85,32 @@
 </div>
 
     <!--Divs with sectors-->
-    <!--Js for appearing divs-->
-    <script>
-        $('a').click(function() {
-            var p = $('a').prev('p')
-            var lineheight = parseInt(p.css('line-height'))
-            if (parseInt(p.css('height')) == lineheight * 3) {
-                p.css('height', 'auto');
-                $(this).text('Less')
-            } else {
-                p.css('height', lineheight * 3 + 'px');
-                $(this).text('More')
-            }
-        });
-    </script>
     <div class="sectorscontainer">
         <div class="row mb-2">
             <div class="col-md-6">
                 <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+
                     <div class="col p-4 d-flex flex-column position-static">
                         <strong class="d-inline-block mb-2 text-primary">Energía</strong>
                         <h3 class="mb-0">Causas de Consumir</h3>
                         <p class="card-text mb-auto">De acuerdo a datos a diciembre de 2019 de la Secretaría de Estado en el Despacho de Energía, Honduras dispone de un índice de cobertura eléctrica de un 85.02% y un índice de acceso a electricidad de 86.97.</p>
-                        <a>Expandir</a>
-                    </div>
-                    <div class="col-auto d-none d-lg-block">
-                        <svg class="bd-placeholder-img" width="200" height="250" xmlns="imgs/eolicelectricity.jpg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
 
+                        <button onclick="myFunction()">Expandir</button>
+
+                        <div id="myDIV" style="display: none;">
+                            <p align="center"><b> Demanda </b></p> 
+                           <p> Para efectos de aclaración el índice de cobertura eléctrica(ICE) consta de las viviendas que cuentan con acceso al suministro de energía eléctrica de una red de distribución del Sistema Interconectado Nacional o por uno de los sistemas aislados en Islas de la Bahía o Gracias a Dios y el índice de acceso a electricidad(IAE) corresponde a las viviendas que cuentan con servicio de energía eléctrica ya sea por una red de distribución, sistemas aislados previamente mencionados o sistemas autónomos residenciales.</p>
+                            
+                           <p> La demanda ha ido en aumento aunque la tasa de crecimiento ha ido variando año con año como se puede apreciar en la siguiente figura:</p>
+
+                           <img src="imgs/grafica2.png" alt="">
+
+                           <p>Finalmente, es importante analizar el tema de pérdidas eléctricas que incluyen las pérdidas técnicas y las pérdidas no técnicas (mora, hurto y fraude).. Estas pérdidas se refieren a la cantidad de Electricidad que se pierde en su paso por la cadena energética, desde su origen hasta su consumo final. Estas pérdidas ocurren por extracción, almacenamiento, transformación, transporte y distribución. </p> <p> Sin embargo, para efecto del balance energético no se consideran las pérdidas de extracción, porque generalmente ya están descontadas del valor de producción, ni tampoco las de transformación, debido a que forman parte de la eficiencia total de estos centros, por lo tanto, solamente se contabilizan las pérdidas de transporte y distribución. </p>
+                            
+                        </div>
+                        <div class="col-auto d-none d-lg-block">
+                            <svg class="bd-placeholder-img" width="200" height="250" xmlns="imgs/eolicelectricity.jpg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
+                        </div> 
                     </div>
                 </div>
             </div>
