@@ -24,6 +24,26 @@
                 font-size: 3.5rem;
             }
         }
+         /* Three image containers (use 25% for four, and 50% for two, etc) */
+ .column {
+    float: left;
+    width: 33.33%;
+    padding: 5px;
+  }
+  
+  /* Clear floats after image containers */
+  .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  } 
+
+   /* Responsive layout - makes the three columns stack on top of each other instead of next to each other*/ 
+@media screen and (max-width: 500px) {
+    .column {
+      width: 100%;
+    }
+  }
     </style>
 
 </head>
@@ -101,22 +121,18 @@
 
         <div class="container my-5">
             <div class="row p-4 pb-0 pe-lg-0 pt-lg-5 align-items-center rounded-3 border shadow-lg">
-                <div class="col-lg-7 p-3 p-lg-5 pt-lg-3">
-                    <h1 class="display-4 fw-bold lh-1">Generación y Transmisión</h1>
-                    <p class="lead">Honduras al igual que muchos países ha empezado una trayectoria hacia un futuro más verde. Desde hace muchos años el país ha tenido una base confiable de energía renovable en lo que es la energía hidroeléctrica a lo largo de los años
-                        pero en 2012 ingresa la energía eólica al país la cual junto con la energía solar en 2015 hicieron un cambio considerable en la matriz energética del país. ha hecho un cambio considerable en la matriz energética. </p>
-                    <p>Asimismo la energía geotérmica se vuelve parte de la energía renovable en 2017. Honduras ha continuado esta trayectoria desde ese entonces y desde 2016 ya tiene una matriz energética mayormente renovable la cual ha oscilado entre un
-                        53.31% en 2016 hasta un 72.54% en 2018.(Honduras en cifras)
-                    </p>
-                    <div class="d-grid gap-2 d-md-flex justify-content-md-start mb-4 mb-lg-3">
-                        <a href="#" class="btn btn-outline-info" role="button" data-bs-toggle="button" style="scroll-behavior:smooth">Continuar leyendo</a>
+                    <div class="row">
+                        <div class="column">
+                          <img src="imgs/eolicelectricity.jpg" alt="" style="width:100%">
+                        </div>
+                        <div class="column">
+                          <img src="imgs/sergei-akulich--heLWtuAN3c-unsplash.jpg" alt="" style="width:100%">
+                        </div>
+                        <div class="column">
+                          <img src="imgs/tobias-tullius-PXXtq6bp6cs-unsplash.jpg" alt="" style="width:100%">
+                        </div>
+                      </div> 
                     </div>
-                </div>
-                <div class="col-lg-4 offset-lg-1 p-0 position-relative overflow-hidden shadow-lg">
-                    <div class="position-lg-absolute top-0 left-0 overflow-hidden">
-                        <img class="d-block rounded-lg-3" src="comprennoren.png" alt="" width="450">
-                    </div>
-                </div>
             </div>
         </div>
 </body>
