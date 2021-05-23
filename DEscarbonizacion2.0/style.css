@@ -1,5 +1,4 @@
-
-  .youtube-player {
+.youtube-player {
     position: relative;
     padding-bottom: 56.25%;
     height: 0;
@@ -7,9 +6,9 @@
     max-width: 100%;
     background: #000;
     margin: 5px;
-  }
+}
 
-  .youtube-player iframe {
+.youtube-player iframe {
     position: absolute;
     top: 0;
     left: 0;
@@ -17,9 +16,9 @@
     height: 100%;
     z-index: 100;
     background: transparent;
-  }
+}
 
-  .youtube-player img {
+.youtube-player img {
     object-fit: cover;
     display: block;
     left: 0;
@@ -36,13 +35,14 @@
     -webkit-transition: 0.4s all;
     -moz-transition: 0.4s all;
     transition: 0.4s all;
-  }
+}
 
-  /*.youtube-player img:hover {
+
+/*.youtube-player img:hover {
     -webkit-filter: brightness(75%);
   }*/
 
-  .youtube-player .play {
+.youtube-player .play {
     height: 72px;
     width: 72px;
     left: 50%;
@@ -52,18 +52,17 @@
     position: absolute;
     background: url('//i.imgur.com/TxzC70f.png') no-repeat;
     cursor: pointer;
-  }
+}
 
-
-.navbar-brand{
+.navbar-brand {
     padding-left: 10px;
 }
 
-a{
+a {
     color: white;
 }
 
-.carousel_slide{
+.carousel_slide {
     margin-top: 5%;
     height: 60%;
 }
@@ -74,23 +73,29 @@ a{
     overflow: hidden;
 }
 
- /* Three image containers (use 25% for four, and 50% for two, etc) */
- .column {
+
+/* Three image containers (use 25% for four, and 50% for two, etc) */
+
+.column {
     float: left;
     width: 33.33%;
     padding: 5px;
-  }
-  
-  /* Clear floats after image containers */
-  .row::after {
+}
+
+
+/* Clear floats after image containers */
+
+.row::after {
     content: "";
     clear: both;
     display: table;
-  } 
+}
 
-   /* Responsive layout - makes the three columns stack on top of each other instead of next to each other*/ 
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other*/
+
 @media screen and (max-width: 500px) {
     .column {
-      width: 100%;
+        width: 100%;
     }
-  }
+}
